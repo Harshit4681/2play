@@ -1,0 +1,233 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ffe3ec, #fff6cc);
+}
+
+.room-container {
+  padding: 1.5rem;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.top-section {
+  margin-bottom: 0.5rem;
+}
+
+.room-heading {
+  font-size: 2.5rem;
+  color: #e91e63;
+  margin-bottom: 0.2rem;
+}
+
+.room-subtext {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.player-section {
+  background: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 500px;
+}
+
+.current-song {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.control-button {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.control-button.play {
+  background-color: #42a5f5;
+}
+
+.control-button.pause {
+  background-color: #f06292;
+}
+
+.control-button.mute {
+  background-color: #9c27b0;
+}
+
+.control-button:hover {
+  opacity: 0.9;
+}
+
+.time-info {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.chat-box {
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 1rem auto;
+  max-width: 500px;
+}
+
+.chat-messages {
+  background: #f1f1f1;
+  height: 100px;
+  border-radius: 8px;
+  padding: 0.5rem;
+  overflow-y: auto;
+  text-align: left;
+  color: #333;
+}
+
+.playlist-section {
+  margin-top: 1rem;
+}
+
+.playlist-title {
+  color: #e91e63;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.song-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.song-card {
+  width: 90%;
+  max-width: 500px;
+  background: #fff;
+  padding: 14px;
+  border-radius: 18px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.song-card:hover {
+  background: #ffe3ec;
+  transform: scale(1.02);
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.control-button.send {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-button.send:hover {
+  background-color: #e63946;
+}
+.chat-box {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fafafa;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  font-size: 14px;
+  max-height: 180px;
+  word-wrap: break-word;
+}
+
+.chat-message {
+  padding: 5px 0;
+}
+
+.chat-typing {
+  font-style: italic;
+  color: gray;
+  padding: 3px 0;
+}
+
+.chat-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.chat-input button {
+  padding: 10px 14px;
+  font-size: 15px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .chat-input {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chat-input input,
+  .chat-input button {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+
+  .chat-messages {
+    font-size: 13px;
+  }
+
