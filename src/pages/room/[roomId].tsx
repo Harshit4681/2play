@@ -327,7 +327,7 @@ export default function RoomPage() {
         </div>
       </div>
 
-      <footer className="footer">Made for Aditi 🌼 by Harshit</footer>
+      <footer className="footer">Made  by Harshit</footer>
     </div>
   );
 }

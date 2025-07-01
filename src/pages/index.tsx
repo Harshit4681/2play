@@ -25,7 +25,7 @@ export default function Home() {
 
   return (
     <div className="welcome-container">
-      <h1 className="title">welcome to 2play</h1>
+      <h1 className="title">welcome to 2play!!</h1>
       <p className="subtitle">Not a project But a present🎶</p>
 
       <input
